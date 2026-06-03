@@ -41,19 +41,17 @@ The repository demonstrates practical implementation of front-end technologies, 
 
 ## Repository Structure
 
-Cognizant-Upskilling/
-│
-├── Module-1/
-│   ├── HTML5/
-│   ├── CSS3/
-│   ├── Bootstrap/
-│   └── JavaScript/
-│
-├── Module-2/
-│   └── ANSI-SQL/
-│
-└── Module-3/
-    └── Java/
+Module-1-Frontend/
+├── HTML5
+├── CSS3
+├── JavaScript
+└── Bootstrap
+
+Module-2-ANSI SQL/
+└── SQL
+
+Module-3
+└── Java
 
 
 ### Module 1 – Front-End Development
