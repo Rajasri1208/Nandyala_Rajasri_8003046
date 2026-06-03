@@ -8,12 +8,9 @@
 * JavaScript
 * ANSI SQL
 * Core Java
-* Advanced Java
 * JDBC
-* Collections Framework
 * Multithreading
 * Java Modules
-* Networking
 
 ## Description
 
@@ -41,18 +38,21 @@ The repository demonstrates practical implementation of front-end technologies, 
 
 ## Repository Structure
 
-Module-1-Frontend/
-├── HTML5
-├── CSS3
-├── JavaScript
-└── Bootstrap
-
-Module-2-ANSI SQL/
-└── SQL
-
-Module-3
-└── Java
-
+```text
+Cognizant-Upskilling/
+│
+├── Module-1/
+│   ├── HTML5/
+│   ├── CSS3/
+│   ├── Bootstrap/
+│   └── JavaScript/
+│
+├── Module-2/
+│   └── ANSI-SQL/
+│
+└── Module-3/
+    └── Java/
+```
 
 ### Module 1 – Front-End Development
 
@@ -63,7 +63,6 @@ This module focuses on front-end web development technologies including:
 * Bootstrap 5
 * JavaScript
 
-Implemented responsive web pages, forms, layouts, Bootstrap components, styling techniques, and JavaScript-based interactivity.
 
 ### Module 2 – Database Programming
 
@@ -78,7 +77,6 @@ This module focuses on ANSI SQL concepts including:
 * Views
 * Data Manipulation Operations
 
-Implemented SQL queries and database operations using ANSI SQL standards.
 
 ### Module 3 – Java Programming
 
@@ -88,6 +86,7 @@ This module focuses on Core and Advanced Java concepts including:
 * Object-Oriented Programming
 * Exception Handling
 * File Handling
+* Collections Framework
 * Multithreading
 * JDBC Connectivity
 * Transaction Management
@@ -113,4 +112,6 @@ Through this upskilling program, I gained practical experience in:
 
 ## Author
 
-**Nandyala Rajasri**
+**Rajasri Nandyala**
+
+
