@@ -1,0 +1,406 @@
+/* ===================================== */
+/* Google Font */
+/* ===================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+
+/* ===================================== */
+/* Universal Selector */
+/* ===================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* ===================================== */
+/* Body Styles */
+/* ===================================== */
+
+body {
+
+    font-family: 'Poppins', sans-serif;
+
+    line-height: 1.6;
+
+    background-color: #dfefff;
+
+    background-image: url("https://images.unsplash.com/photo-1506744038136-46273834b3fb");
+
+    background-size: cover;
+
+    background-position: center;
+
+    background-attachment: fixed;
+}
+
+
+/* ===================================== */
+/* Main Header */
+/* ===================================== */
+
+#mainHeader {
+
+    background: linear-gradient(to right, #003366, #0059b3);
+
+    color: white;
+
+    text-align: center;
+
+    padding: 4vh 2vw;
+}
+
+
+/* ===================================== */
+/* Main Heading */
+/* ===================================== */
+
+h1 {
+
+    font-size: 3vw;
+
+    font-weight: 700;
+
+    letter-spacing: 2px;
+
+    text-transform: uppercase;
+}
+
+
+/* ===================================== */
+/* h2 Styles */
+/* ===================================== */
+
+h2 {
+
+    color: #ffeb3b;
+
+    font-size: 2vw;
+
+    margin-top: 10px;
+}
+
+
+/* ===================================== */
+/* Navigation Menu */
+/* Flexbox Layout */
+/* ===================================== */
+
+.nav-menu {
+
+    list-style-type: none;
+
+    display: flex;
+
+    justify-content: center;
+
+    gap: 2vw;
+
+    margin-top: 20px;
+}
+
+
+/* Navigation Items */
+
+.nav-menu li {
+
+    padding: 10px;
+}
+
+
+/* ===================================== */
+/* Link Styles */
+/* ===================================== */
+
+a:link {
+
+    color: white;
+
+    text-decoration: none;
+
+    font-weight: 600;
+}
+
+
+a:hover {
+
+    color: #ffeb3b;
+}
+
+
+a:active {
+
+    color: orange;
+}
+
+
+a:visited {
+
+    color: #d1d1d1;
+}
+
+
+/* ===================================== */
+/* Section Header */
+/* ===================================== */
+
+.section-header {
+
+    background: linear-gradient(to right, #0066cc, #00bfff);
+
+    width: 80%;
+
+    margin: 4vh auto;
+
+    padding: 2vh;
+
+    border-radius: 10px;
+
+    text-align: center;
+}
+
+
+/* ===================================== */
+/* Content Section */
+/* Flexbox Responsive Layout */
+/* ===================================== */
+
+.content-section {
+
+    width: 90%;
+
+    margin: auto;
+
+    display: flex;
+
+    justify-content: center;
+
+    flex-wrap: wrap;
+
+    gap: 2vw;
+}
+
+
+/* ===================================== */
+/* Event Card */
+/* ===================================== */
+
+.eventCard {
+
+    background-color: rgba(255, 255, 255, 0.9);
+
+    width: 30%;
+
+    min-width: 280px;
+
+    padding: 2vw;
+
+    border: 3px solid #0059b3;
+
+    border-radius: 10px;
+
+    text-align: center;
+
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+}
+
+
+/* ===================================== */
+/* Event Images */
+/* ===================================== */
+
+.event-image {
+
+    width: 100%;
+
+    height: 30vh;
+
+    object-fit: cover;
+
+    border-radius: 10px;
+
+    margin-bottom: 15px;
+}
+
+
+/* ===================================== */
+/* h3 Styles */
+/* ===================================== */
+
+h3 {
+
+    color: #003366;
+
+    margin-bottom: 15px;
+
+    font-size: 1.5vw;
+}
+
+
+/* ===================================== */
+/* Description Styles */
+/* ===================================== */
+
+.description {
+
+    font-size: 1vw;
+
+    line-height: 1.8;
+
+    text-align: justify;
+
+    margin-bottom: 20px;
+
+    color: #333333;
+}
+
+
+/* ===================================== */
+/* Button Styles */
+/* ===================================== */
+
+.cta-button {
+
+    background-color: #007BFF;
+
+    color: white;
+
+    padding: 12px 20px;
+
+    border: none;
+
+    border-radius: 5px;
+
+    cursor: pointer;
+
+    font-size: 1vw;
+}
+
+
+.cta-button:hover {
+
+    background-color: #0056b3;
+}
+
+
+/* ===================================== */
+/* News Section */
+/* ===================================== */
+
+.news-section {
+
+    width: 85%;
+
+    margin: 5vh auto;
+
+    background-color: rgba(255, 255, 255, 0.9);
+
+    padding: 3vw;
+
+    border-radius: 10px;
+}
+
+
+/* ===================================== */
+/* Multi Column Layout */
+/* ===================================== */
+
+.news-article {
+
+    column-count: 2;
+
+    column-gap: 30px;
+
+    column-rule: 1px solid gray;
+
+    text-align: justify;
+
+    line-height: 1.8;
+
+    font-size: 1vw;
+
+    color: #333333;
+}
+
+
+/* ===================================== */
+/* MEDIA QUERY */
+/* Responsive Design */
+/* ===================================== */
+
+@media screen and (max-width: 768px) {
+
+    /* Navigation Stack Vertically */
+
+    .nav-menu {
+
+        flex-direction: column;
+
+        align-items: center;
+    }
+
+
+    /* Smaller Heading */
+
+    h1 {
+
+        font-size: 7vw;
+    }
+
+
+    h2 {
+
+        font-size: 5vw;
+    }
+
+
+    h3 {
+
+        font-size: 5vw;
+    }
+
+
+    /* Smaller Text */
+
+    .description {
+
+        font-size: 3.5vw;
+    }
+
+
+    /* Event Cards Full Width */
+
+    .eventCard {
+
+        width: 90%;
+    }
+
+
+    /* Reduce Image Size */
+
+    .event-image {
+
+        height: 25vh;
+    }
+
+
+    /* Multi Column to Single Column */
+
+    .news-article {
+
+        column-count: 1;
+
+        font-size: 3.5vw;
+    }
+
+
+    /* Button Text Size */
+
+    .cta-button {
+
+        font-size: 3.5vw;
+    }
+}

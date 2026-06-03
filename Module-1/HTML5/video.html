@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <!-- Basic Page Information -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Local Community Event Portal</title>
+
+    <!-- Internal CSS -->
+    <style>
+
+        body {
+
+            font-family: Arial, sans-serif;
+            margin: 20px;
+
+        }
+
+        /* Welcome Banner Styling using ID */
+        #welcomeBanner {
+
+            background-color: blue;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            border-radius: 8px;
+            margin-bottom: 20px;
+
+        }
+
+        /* Highlight Class Styling */
+        .highlight {
+
+            background-color: yellow;
+            font-weight: bold;
+            padding: 4px;
+
+        }
+
+        /* Event Image Styling */
+        .eventImage {
+
+            width: 220px;
+            height: 150px;
+            border: 3px solid black;
+            border-radius: 8px;
+            padding: 3px;
+            transition: 0.3s;
+
+        }
+
+        /* Registration Form Styling */
+        .formContainer {
+
+            width: 450px;
+            padding: 20px;
+            margin-top: 20px;
+            border: 2px solid gray;
+            border-radius: 10px;
+            background-color: #f2f2f2;
+
+        }
+
+        .formContainer input,
+        .formContainer select,
+        .formContainer textarea {
+
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            margin-bottom: 15px;
+
+        }
+
+        .formContainer button {
+
+            background-color: blue;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+
+        }
+
+        .formContainer button:hover {
+
+            background-color: darkblue;
+
+        }
+
+        output {
+
+            color: green;
+            font-weight: bold;
+
+        }
+
+        #feeDisplay {
+
+            color: darkred;
+            font-weight: bold;
+
+        }
+
+        #charCount {
+
+            color: purple;
+            font-weight: bold;
+
+        }
+
+        #videoMessage {
+
+            color: green;
+            font-weight: bold;
+            margin-top: 10px;
+
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <!-- Navigation Section -->
+    <header>
+
+        <nav>
+
+            <h1>Community Event Portal</h1>
+
+            <ul>
+
+                <li><a href="#home">Home</a></li>
+
+                <li><a href="#events">Events</a></li>
+
+                <li><a href="#gallery">Gallery</a></li>
+
+                <li><a href="#promoVideo">Promo Video</a></li>
+
+                <li><a href="#registration">Register</a></li>
+
+                <li><a href="#contact">Contact</a></li>
+
+                <li>
+                    <a href="help.html" target="_blank">
+                        Help
+                    </a>
+                </li>
+
+            </ul>
+
+        </nav>
+
+    </header>
+
+
+    <!-- Welcome Banner Section -->
+    <div id="welcomeBanner">
+
+        <h2>Welcome Back, Resident!</h2>
+
+        <p>
+            Stay updated with local events and city activities.
+        </p>
+
+        <p>
+
+            <span style="color: red; font-weight: bold;">
+
+                Special Offer:
+
+            </span>
+
+            Free registration for this month's community workshops.
+
+        </p>
+
+    </div>
+
+
+    <!-- Main Content Section -->
+    <main>
+
+        <!-- Home Section -->
+        <section id="home">
+
+            <h2>Welcome Residents</h2>
+
+            <p>
+                This portal helps local residents register for events,
+                view event locations, and access city services online.
+            </p>
+
+        </section>
+
+
+        <!-- Events Section -->
+        <section id="events">
+
+            <h2>Upcoming Events</h2>
+
+            <p>
+                Details about community programs and public events
+                will be displayed here.
+            </p>
+
+            <p class="highlight">
+
+                Registration for summer cultural events is now open.
+
+            </p>
+
+        </section>
+
+
+        <!-- Community Events Gallery Section -->
+        <section id="gallery">
+
+            <h2>Community Events Gallery</h2>
+
+            <table border="1" cellpadding="10">
+
+                <!-- First Row -->
+                <tr>
+
+                    <td align="center">
+
+                        <img src="music.webp"
+                             alt="Music Festival"
+                             title="Annual Music Festival"
+                             class="eventImage"
+                             ondblclick="enlargeImage(this)">
+
+                        <p>
+                            <b>Annual Music Festival</b>
+                        </p>
+
+                    </td>
+
+                    <td align="center">
+
+                        <img src="food-donation.webp"
+                             alt="Food Donation Drive"
+                             title="Community Food Donation"
+                             class="eventImage"
+                             ondblclick="enlargeImage(this)">
+
+                        <p>
+                            <b>Food Donation Drive</b>
+                        </p>
+
+                    </td>
+
+                    <td align="center">
+
+                        <img src="tree-plantation.webp"
+                             alt="Tree Plantation"
+                             title="Green City Campaign"
+                             class="eventImage"
+                             ondblclick="enlargeImage(this)">
+
+                        <p>
+                            <b>Tree Plantation Program</b>
+                        </p>
+
+                    </td>
+
+                </tr>
+
+
+                <!-- Second Row -->
+                <tr>
+
+                    <td align="center">
+
+                        <img src="Awareness - Health -Camp.webp"
+                             alt="Health Camp"
+                             title="Free Health Checkup Camp"
+                             class="eventImage"
+                             ondblclick="enlargeImage(this)">
+
+                        <p>
+                            <b>Health Awareness Camp</b>
+                        </p>
+
+                    </td>
+
+                    <td align="center">
+
+                        <img src="sports-meet.jpg"
+                             alt="Sports Event"
+                             title="Community Sports Meet"
+                             class="eventImage"
+                             ondblclick="enlargeImage(this)">
+
+                        <p>
+                            <b>Community Sports Meet</b>
+                        </p>
+
+                    </td>
+
+                    <td align="center">
+
+                        <img src="cultural-celebration.jpg"
+                             alt="Cultural Program"
+                             title="Local Cultural Celebration"
+                             class="eventImage"
+                             ondblclick="enlargeImage(this)">
+
+                        <p>
+                            <b>Cultural Celebration</b>
+                        </p>
+
+                    </td>
+
+                </tr>
+
+            </table>
+
+        </section>
+
+
+        <!-- Event Promo Video Section -->
+        <section id="promoVideo">
+
+            <h2>Community Event Promo Video</h2>
+
+            <video width="400"
+                   controls
+                   oncanplay="videoReady()">
+
+                <source src="Video2.mp4" type="video/mp4">
+
+                Your browser does not support the video tag.
+
+            </video>
+
+            <p id="videoMessage"></p>
+
+        </section>
+
+
+        <!-- Event Registration Form Section -->
+        <section id="registration">
+
+            <h2>Event Registration Form</h2>
+
+            <div class="formContainer">
+
+                <form>
+
+                    <!-- Name Field -->
+                    <label for="name">Full Name</label>
+
+                    <input type="text"
+                           id="name"
+                           placeholder="Enter your full name"
+                           required
+                           autofocus>
+
+                    <!-- Email Field -->
+                    <label for="email">Email Address</label>
+
+                    <input type="email"
+                           id="email"
+                           placeholder="Enter your email"
+                           required>
+
+                    <!-- Phone Field with onblur -->
+                    <label for="phone">Phone Number</label>
+
+                    <input type="text"
+                           id="phone"
+                           placeholder="Enter 10-digit phone number"
+                           onblur="validatePhone()"
+                           required>
+
+                    <p id="phoneMessage"></p>
+
+                    <!-- Date Field -->
+                    <label for="date">Event Date</label>
+
+                    <input type="date"
+                           id="date"
+                           required>
+
+                    <!-- Select Field with onchange -->
+                    <label for="eventType">Event Type</label>
+
+                    <select id="eventType"
+                            onchange="showFee()"
+                            required>
+
+                        <option value="">-- Select Event --</option>
+
+                        <option value="100">Music Festival</option>
+
+                        <option value="50">Food Donation Drive</option>
+
+                        <option value="75">Health Camp</option>
+
+                        <option value="120">Sports Meet</option>
+
+                    </select>
+
+                    <p id="feeDisplay"></p>
+
+                    <!-- Feedback Textarea -->
+                    <label for="message">Feedback Message</label>
+
+                    <textarea id="message"
+                              rows="4"
+                              placeholder="Enter your feedback"
+                              onkeyup="countCharacters()"></textarea>
+
+                    <p id="charCount">
+
+                        Characters: 0
+
+                    </p>
+
+                    <!-- Submit Button -->
+                    <button type="button"
+                            onclick="showConfirmation()">
+
+                        Register
+
+                    </button>
+
+                    <br><br>
+
+                    <!-- Output Message -->
+                    <output id="confirmationMessage"></output>
+
+                </form>
+
+            </div>
+
+        </section>
+
+
+        <!-- Contact Section -->
+        <section id="contact">
+
+            <h2>Contact</h2>
+
+            <p>
+                Email: support@communityportal.com
+            </p>
+
+            <p>
+                Phone: +91 9876543210
+            </p>
+
+        </section>
+
+    </main>
+
+
+    <!-- Footer Section -->
+    <footer>
+
+        <p>
+            &copy; 2026 Local City Council. All rights reserved.
+        </p>
+
+    </footer>
+
+
+    <!-- JavaScript -->
+    <script>
+
+        /* Phone Validation using onblur */
+        function validatePhone() {
+
+            let phone = document.getElementById("phone").value;
+
+            if (phone.length !== 10 || isNaN(phone)) {
+
+                document.getElementById("phoneMessage").innerHTML =
+                    "Enter a valid 10-digit phone number";
+
+                document.getElementById("phoneMessage").style.color = "red";
+
+            }
+            else {
+
+                document.getElementById("phoneMessage").innerHTML =
+                    "Valid phone number";
+
+                document.getElementById("phoneMessage").style.color = "green";
+
+            }
+
+        }
+
+
+        /* Display Event Fee using onchange */
+        function showFee() {
+
+            let fee = document.getElementById("eventType").value;
+
+            if (fee !== "") {
+
+                document.getElementById("feeDisplay").innerHTML =
+                    "Event Fee: ₹" + fee;
+
+            }
+
+        }
+
+
+        /* Show Confirmation using onclick */
+        function showConfirmation() {
+
+            document.getElementById("confirmationMessage").innerHTML =
+                "Registration submitted successfully!";
+
+        }
+
+
+        /* Enlarge Image using ondblclick */
+        function enlargeImage(image) {
+
+            if (image.style.width === "350px") {
+
+                image.style.width = "220px";
+                image.style.height = "150px";
+
+            }
+            else {
+
+                image.style.width = "350px";
+                image.style.height = "220px";
+
+            }
+
+        }
+
+
+        /* Count Characters using Key Events */
+        function countCharacters() {
+
+            let text = document.getElementById("message").value;
+
+            document.getElementById("charCount").innerHTML =
+                "Characters: " + text.length;
+
+        }
+
+
+        /* Video Ready Message using oncanplay */
+        function videoReady() {
+
+            document.getElementById("videoMessage").innerHTML =
+                "Video ready to play";
+
+        }
+
+
+        /* Warn User Before Leaving Unfinished Form */
+        window.onbeforeunload = function () {
+
+            let name =
+                document.getElementById("name").value;
+
+            let email =
+                document.getElementById("email").value;
+
+            if (name !== "" || email !== "") {
+
+                return "Your form is not completely submitted.";
+
+            }
+
+        }
+
+    </script>
+
+</body>
+
+</html>

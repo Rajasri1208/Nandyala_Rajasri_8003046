@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Local Community Event Portal</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        .event-card {
+            border: 1px solid #ccc;
+            padding: 15px;
+            margin-bottom: 15px;
+            border-radius: 8px;
+            width: 320px;
+        }
+
+        button {
+            padding: 8px 12px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+
+        select {
+            padding: 8px;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Welcome to the Community Event Portal</h1>
+
+    <!-- Category Filter -->
+    <label>Select Category:</label>
+
+    <select id="categoryFilter">
+        <option value="All">All</option>
+        <option value="Environment">Environment</option>
+        <option value="Music">Music</option>
+        <option value="Food">Food</option>
+    </select>
+
+    <!-- Event Container -->
+    <div id="eventContainer"></div>
+
+    <!-- External JavaScript -->
+    <script src="main.js"></script>
+
+</body>
+</html>

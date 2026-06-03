@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Local Community Event Portal</title>
+
+    <style>
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f4f4f4;
+        }
+
+        h1,
+        h2 {
+            color: #333;
+        }
+
+        .controls {
+            margin-bottom: 20px;
+        }
+
+        select,
+        input,
+        button {
+            padding: 8px 12px;
+            margin: 8px;
+        }
+
+        #loader {
+            display: none;
+            color: blue;
+            font-size: 18px;
+            margin: 15px 0;
+        }
+
+        #eventContainer {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            margin-bottom: 30px;
+        }
+
+        .event-card {
+            background: white;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            padding: 15px;
+            width: 300px;
+            box-shadow: 2px 2px 8px rgba(0,0,0,0.1);
+        }
+
+        .event-card h2 {
+            margin-top: 0;
+        }
+
+        .form-container {
+            background: white;
+            padding: 20px;
+            width: 350px;
+            border-radius: 8px;
+            box-shadow: 2px 2px 8px rgba(0,0,0,0.1);
+        }
+
+        .error {
+            color: red;
+            font-size: 14px;
+            margin-left: 8px;
+        }
+
+        .success {
+            color: green;
+            font-weight: bold;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <h1>Welcome to the Community Event Portal</h1>
+
+    <!-- Filter Controls -->
+
+    <div class="controls">
+
+        <label for="categoryFilter">
+            Filter by Category:
+        </label>
+
+        <select id="categoryFilter">
+
+            <option value="All">All</option>
+            <option value="Music">Music</option>
+            <option value="Food">Food</option>
+            <option value="Environment">
+                Environment
+            </option>
+
+        </select>
+
+        <input type="text"
+               id="searchBox"
+               placeholder="Search event name">
+
+    </div>
+
+    <!-- Loader -->
+
+    <div id="loader">
+        Loading events...
+    </div>
+
+    <!-- Event Cards -->
+
+    <div id="eventContainer"></div>
+
+    <!-- Registration Form -->
+
+    <div class="form-container">
+
+        <h2>Event Registration</h2>
+
+        <form id="registrationForm">
+
+            <!-- Name -->
+
+            <div>
+
+                <input type="text"
+                       name="userName"
+                       placeholder="Enter your name">
+
+                <div id="nameError"
+                     class="error"></div>
+
+            </div>
+
+            <!-- Email -->
+
+            <div>
+
+                <input type="email"
+                       name="userEmail"
+                       placeholder="Enter your email">
+
+                <div id="emailError"
+                     class="error"></div>
+
+            </div>
+
+            <!-- Event Selection -->
+
+            <div>
+
+                <select name="selectedEvent">
+
+                    <option value="">
+                        Select Event
+                    </option>
+
+                    <option value="Live Music Concert">
+                        Live Music Concert
+                    </option>
+
+                    <option value="Workshop on Baking">
+                        Workshop on Baking
+                    </option>
+
+                    <option value="Community Clean-Up Drive">
+                        Community Clean-Up Drive
+                    </option>
+
+                </select>
+
+                <div id="eventError"
+                     class="error"></div>
+
+            </div>
+
+            <button type="submit">
+                Register
+            </button>
+
+        </form>
+
+        <p id="successMessage"
+           class="success"></p>
+
+    </div>
+
+    <!-- External JS -->
+
+    <script src="main.js"></script>
+
+</body>
+
+</html>

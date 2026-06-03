@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Local Community Event Portal</title>
+
+    <style>
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 20px;
+        }
+
+        h1,
+        h2 {
+            color: #333;
+        }
+
+        #eventContainer {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            margin-bottom: 30px;
+        }
+
+        .event-card {
+            background-color: white;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            padding: 15px;
+            width: 280px;
+            box-shadow: 2px 2px 8px rgba(0,0,0,0.1);
+        }
+
+        .event-card h3 {
+            margin-top: 0;
+        }
+
+        .form-container {
+            background-color: white;
+            padding: 20px;
+            width: 350px;
+            border-radius: 8px;
+            box-shadow: 2px 2px 8px rgba(0,0,0,0.1);
+        }
+
+        input,
+        select,
+        button {
+            width: 100%;
+            padding: 10px;
+            margin-top: 10px;
+        }
+
+        button {
+            cursor: pointer;
+        }
+
+        .error {
+            color: red;
+            font-size: 14px;
+        }
+
+        .success {
+            color: green;
+            font-weight: bold;
+        }
+
+        .failure {
+            color: red;
+            font-weight: bold;
+        }
+
+        #loader {
+            display: none;
+            color: blue;
+            margin-top: 10px;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <h1>Local Community Event Portal</h1>
+
+    <!-- Event Container -->
+
+    <div id="eventContainer"></div>
+
+    <!-- Registration Form -->
+
+    <div class="form-container">
+
+        <h2>Event Registration</h2>
+
+        <form id="registrationForm">
+
+            <!-- Name -->
+
+            <input type="text"
+                   name="userName"
+                   placeholder="Enter your name">
+
+            <div id="nameError"
+                 class="error"></div>
+
+            <!-- Email -->
+
+            <input type="email"
+                   name="userEmail"
+                   placeholder="Enter your email">
+
+            <div id="emailError"
+                 class="error"></div>
+
+            <!-- Event -->
+
+            <select name="selectedEvent">
+
+                <option value="">
+                    Select Event
+                </option>
+
+                <option value="Music Concert">
+                    Music Concert
+                </option>
+
+                <option value="Baking Workshop">
+                    Baking Workshop
+                </option>
+
+                <option value="Clean-Up Drive">
+                    Clean-Up Drive
+                </option>
+
+            </select>
+
+            <div id="eventError"
+                 class="error"></div>
+
+            <!-- Submit -->
+
+            <button type="submit">
+                Register
+            </button>
+
+        </form>
+
+        <!-- Loader -->
+
+        <div id="loader">
+            Sending registration...
+        </div>
+
+        <!-- Messages -->
+
+        <p id="successMessage"
+           class="success"></p>
+
+        <p id="failureMessage"
+           class="failure"></p>
+
+    </div>
+
+    <!-- External JavaScript -->
+
+    <script src="main.js"></script>
+
+</body>
+
+</html>
